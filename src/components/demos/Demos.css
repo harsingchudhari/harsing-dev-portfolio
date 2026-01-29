@@ -1,0 +1,144 @@
+.demos-page {
+    min-height: 100vh;
+    background: var(--pf-bg);
+    color: var(--pf-text);
+    padding: 0 5%;
+    font-family: 'Outfit', sans-serif;
+}
+
+.demos-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.btn-back-portfolio {
+    background: transparent;
+    border: 1px solid var(--pf-primary);
+    color: var(--pf-primary);
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-back-portfolio:hover {
+    background: var(--pf-primary);
+    color: white;
+}
+
+.demos-header {
+    text-align: center;
+    padding: 4rem 0 2rem;
+}
+
+.demos-header p {
+    color: var(--pf-secondary);
+    max-width: 600px;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+}
+
+.demos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2.5rem;
+    padding: 3rem 0 6rem;
+}
+
+.demo-card {
+    background: var(--pf-card-bg);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--pf-border);
+}
+
+.demo-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.demo-card-image {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.demo-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.demo-card:hover .demo-card-overlay {
+    opacity: 1;
+}
+
+.btn-view-live {
+    padding: 1rem 2rem;
+    background: white;
+    color: #111;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.demo-card:hover .btn-view-live {
+    transform: translateY(0);
+}
+
+.demo-card-content {
+    padding: 2rem;
+}
+
+.demo-category {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #d946ef;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.demo-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--pf-text);
+}
+
+.demo-desc {
+    font-size: 0.95rem;
+    color: var(--pf-secondary);
+    line-height: 1.6;
+}
+
+.demos-footer {
+    text-align: center;
+    padding: 4rem 0;
+    border-top: 1px solid var(--pf-border);
+    color: var(--pf-secondary);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .demos-grid {
+        grid-template-columns: 1fr;
+    }
+}
