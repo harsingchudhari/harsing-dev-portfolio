@@ -2,6 +2,7 @@
   "name": "react-web",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://harsingchudhari.github.io/harsing-dev-portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
