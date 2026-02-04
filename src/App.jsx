@@ -49,7 +49,7 @@ function App() {
   }
 
   if (appMode === 'resume') {
-    return <Resume onBack={() => setAppMode('portfolio')} />;
+    return <Resume onBack={() => setAppMode('portfolio')} theme={theme} />;
   }
 
   if (appMode === 'demos') {

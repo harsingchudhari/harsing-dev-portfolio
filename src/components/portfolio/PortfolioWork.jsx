@@ -1,7 +1,7 @@
 import React from 'react';
 import InteractiveSlider from './InteractiveSlider';
 
-const PortfolioWork = ({ works, handleProjectClick }) => {
+const PortfolioWork = ({ works, handleProjectClick, onOpenDemo }) => {
     return (
         <section className="services-section" id="work" style={{ background: 'var(--pf-card-bg)' }}>
             <div className="section-header">
@@ -29,7 +29,7 @@ const PortfolioWork = ({ works, handleProjectClick }) => {
             />
 
             <div className="services-container">
-                <button className="btn-center" style={{ marginTop: '3rem' }}>Show more →</button>
+                <button className="btn-center" style={{ marginTop: '3rem' }} onClick={onOpenDemo}>Show more →</button>
             </div>
         </section>
     );
