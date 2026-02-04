@@ -1,7 +1,7 @@
 .demos-page {
     min-height: 100vh;
     background: var(--pf-bg);
-    color: var(--pf-text);
+    color: var(--pf-primary);
     padding: 0 5%;
     font-family: 'Outfit', sans-serif;
 }
@@ -120,7 +120,7 @@
     font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: var(--pf-text);
+    color: var(--pf-primary);
 }
 
 .demo-desc {
