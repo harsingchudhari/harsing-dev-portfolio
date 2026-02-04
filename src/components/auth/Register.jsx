@@ -33,7 +33,7 @@ const Register = ({ onSwitch, theme }) => {
 
                 {/* Left: Image Side */}
                 <div className="auth-half auth-image-side">
-                    <div className="auth-bg-image" style={{ backgroundImage: "url('/register_bg.png')" }}>
+                    <div className="auth-bg-image" style={{ backgroundImage: "url('register_bg.png')" }}>
                         <div className="image-overlay">
                             <h1 className="overlay-title">Your Adventure <br /> Start <span>Here</span></h1>
                             <p className="overlay-desc">From hidden alleys to breathtaking landscapes, it's time for you to explore the world and write your own unforgettable journey.</p>

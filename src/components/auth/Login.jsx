@@ -71,7 +71,7 @@ const Login = ({ onSwitch, theme }) => {
 
                 {/* Right: Image Side */}
                 <div className="auth-half auth-image-side">
-                    <div className="auth-bg-image" style={{ backgroundImage: "url('/login_bg.png')" }}>
+                    <div className="auth-bg-image" style={{ backgroundImage: "url('login_bg.png')" }}>
                         <div className="image-overlay">
                             <h1 className="overlay-title">Every destination <br /> has a <span>Story</span></h1>
                             <p className="overlay-desc">From hidden alleys to breathtaking landscapes, it's time for you to explore the world and write your own unforgettable journey.</p>
