@@ -6,7 +6,7 @@ import ResumeExperience from './ResumeExperience';
 import ResumeSkills from './ResumeSkills';
 import ResumeEducation from './ResumeEducation';
 
-const Resume = ({ onBack }) => {
+const Resume = ({ onBack, theme }) => {
     // Skills Data
     const skills = [
         { name: "React.js / Next.js", level: 95 },
@@ -25,7 +25,7 @@ const Resume = ({ onBack }) => {
     }, []);
 
     return (
-        <div className="resume-container">
+        <div className="resume-container" data-theme={theme}>
             <button className="btn-back" onClick={onBack}> Back to Portfolio </button>
             <div className="resume-content-wrapper">
                 <ResumeHeader />

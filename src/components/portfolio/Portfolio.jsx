@@ -155,7 +155,7 @@ const Portfolio = ({ onShowResume, onOpenDemo, onAuth, theme, toggleTheme }) => 
             <PortfolioHero handleResumeClick={handleResumeClick} />
             <PortfolioAbout />
             <PortfolioServices services={services} handleProjectClick={handleProjectClick} />
-            <PortfolioWork works={works} handleProjectClick={handleProjectClick} />
+            <PortfolioWork works={works} handleProjectClick={handleProjectClick} onOpenDemo={onOpenDemo} />
             <PortfolioContact />
             <PortfolioFooter />
 

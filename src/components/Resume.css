@@ -44,6 +44,7 @@
     font-weight: 800;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.5rem;
     animation: slideUp 0.6s ease-out 0.4s backwards;
@@ -80,6 +81,12 @@
     display: inline-block;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
+}
+
+.resume-summary-text {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #444;
 }
 
 /* Experience Timeline */
@@ -225,4 +232,53 @@
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+/* Dark Mode Support */
+[data-theme='dark'].resume-container {
+    background: #121212;
+    color: #f3f4f6;
+}
+
+[data-theme='dark'] .resume-role {
+    color: #a3a3a3;
+}
+
+[data-theme='dark'] .timeline-item {
+    border-left-color: #333;
+}
+
+[data-theme='dark'] .timeline-date {
+    color: #71717a;
+}
+
+[data-theme='dark'] .timeline-company {
+    color: #a3a3a3;
+}
+
+[data-theme='dark'] .skill-bar {
+    background: #262626;
+}
+
+[data-theme='dark'] .btn-back {
+    background: #1e1e1e;
+    border-color: #333;
+    color: #e5e7eb;
+}
+
+[data-theme='dark'] .btn-back:hover {
+    background: #262626;
+    border-color: #444;
+}
+
+[data-theme='dark'] .section-title {
+    color: #ffffff;
+}
+
+[data-theme='dark'] .resume-summary-text {
+    color: #d1d5db;
+}
+
+[data-theme='dark'] .timeline-item p {
+    color: #d1d5db;
 }
